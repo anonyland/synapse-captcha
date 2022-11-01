@@ -1,0 +1,47 @@
+[tool.poetry]
+name = 'synapse-captcha'
+version = '0.7.2.3'
+readme = 'README.md'
+repository = 'https://codeberg.org/deathrow/synapse-captcha'
+packages = [{include = 'matrix_registration'}]
+include = [
+    'matrix_registration/templates/*.html',
+    'matrix_registration/static/css/*.css',
+    'matrix_registration/static/images/*.jpg',
+    'matrix_registration/static/images/*.png',
+    'matrix_registration/static/images/*.ico'
+]
+
+[tool.poetry.dependencies]
+python = '^3.8'
+appdirs = '~=1.4.3'
+captcha = '^0.4'
+Flask = '~=1.1'
+Flask-SQLAlchemy = '~=2.4.1'
+Flask-Cors = '~=3.0.7'
+Flask-HTTPAuth = '^4.5.0'
+python-dateutil = '~=2.8.1'
+PyYAML = '~=5.1'
+requests = '^2.27.1'
+SQLAlchemy = '~=1.3.13'
+waitress = '~=1.4.4'
+WTForms = '~=2.1'
+MarkupSafe = '2.0.1'
+psycopg2-binary = "^2.9.3"
+
+[tool.poetry.dev-dependencies]
+parameterized = '^0.8.1'
+flake8 = '^4.0.1'
+yapf = "^0.32.0"
+toml = "^0.10.2"
+
+[tool.poetry.scripts]
+matrix-registration = 'matrix_registration.app:cli'
+
+[tool.poetry.extras]
+postgres = ['psycopg2-binary>=2.8.4']
+
+
+[build-system]
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
