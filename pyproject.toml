@@ -2,6 +2,8 @@
 name = 'synapse-captcha'
 version = '0.7.2.3'
 readme = 'README.md'
+author = ' '
+description = ' '
 repository = 'https://codeberg.org/deathrow/synapse-captcha'
 packages = [{include = 'matrix_registration'}]
 include = [
