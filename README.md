@@ -5,7 +5,7 @@ Disable registration in ``homeserver.yaml``
 
 ### Building
 ``
-git clone https://codeberg.org/deathrow/synapse-captcha
+git clone https://git.anonymousland.org/anonymousland/synapse-captcha/
 ``
 
 ``
