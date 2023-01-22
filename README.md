@@ -1,3 +1,5 @@
+# DEPRECATED: We no longer use this
+
 ## Synapse-Captcha
 
 A custom captcha for Synapse.
